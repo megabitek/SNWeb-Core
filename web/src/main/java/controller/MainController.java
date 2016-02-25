@@ -3,12 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package repositoryTest;
+package controller;
+
+import org.springframework.stereotype.Controller;
 
 /**
  *
  * @author Elena_Kholkina
  */
-public class UserRepositoryTest {
+@Controller
+public class MainController {
     
 }
