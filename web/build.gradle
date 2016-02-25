@@ -5,6 +5,8 @@ dependencies {
     compile project(":model")
     compile "javax.servlet:servlet-api:2.5"	
     compile 'org.springframework:spring-webmvc:4.1.6.RELEASE'
+    compile 'org.springframework:spring-web:3.0.4.RELEASE'
+
     compile 'javax.servlet:jstl:1.2'
 }
 jettyRunWar{
