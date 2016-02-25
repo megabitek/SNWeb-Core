@@ -1,0 +1,10 @@
+apply plugin: "war"
+apply plugin: "jetty"
+
+dependencies {
+     compile project(":model")
+    
+}
+httpPort = 8081
+stopPort = 9080
+stopKey = "stopKey"
