@@ -2,13 +2,13 @@ apply plugin: "war"
 apply plugin: "jetty"
 
 dependencies {
-    compile project(":utils")
+    compile project(":model")
     compile "javax.servlet:servlet-api:2.5"	
     compile 'org.springframework:spring-webmvc:4.1.6.RELEASE'
     compile 'javax.servlet:jstl:1.2'
 }
 jettyRunWar{
-    contextPath = "spring4"
+    contextPath = "sn"
     httpPort = 8080
 }
 jettyRun{
