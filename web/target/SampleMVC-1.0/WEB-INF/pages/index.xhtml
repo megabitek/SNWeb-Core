@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sample App Sign-up Page</title>
+</head>
+<body>
+
+<h1>Sign Up Here!</h1>
+
+<form method="post" action="create" id="signupForm" cssClass="form-horizontal"
+         >
+    <fieldset>
+        <legend>Enter Your Information</legend>
+
+      
+        <div class="control-group">
+            <label class="control-label" >Email</label>
+
+            <div class="controls">
+                <input path="email" id="field-email" tabindex="1" maxlength="45" placeholder="Email"/>
+                <!--form:errors path="email" cssClass="help-inline" element="span"/-->
+            </div>
+        </div>
+        <!--c:set var="firstNameErrors"><form:errors path="firstName"/></c:set-->
+        <div class="control-group"> 
+            <label class="control-label" for="field-firstName">First Name</label>
+            <div class="controls">
+                <input path="firstName" id="field-firstName" tabindex="2" maxlength="35" placeholder="First Name"/>
+                <!--form:errors path="firstName" cssClass="help-inline" element="span"/-->
+            </div>
+        </div>
+        <!--c:set var="lastNameErrors"><form:errors path="lastName"/></c:set-->
+        <div class="control-group">
+            <label class="control-label" for="field-lastName">Last Name</label>
+            <div class="controls">
+                <input path="lastName" id="field-lastName" tabindex="3" maxlength="35" placeholder="Last Name"/>
+                <!--form:errors path="lastName" cssClass="help-inline" element="span"/-->
+            </div>
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Sign up</button>
+            <button type="button" class="btn">Cancel</button>
+        </div>
+    </fieldset>
+</form>
+
+
+</body>
+</html>
