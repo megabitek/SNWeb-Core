@@ -13,9 +13,10 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import service.UserService;
 
 /**
- * User: ryan Date: 2/7/13
+ *
+ * @author Elena_Kholkina
  */
-@Controller
+@Controller 
 @RequestMapping(value = "/")
 public class IndexController {
 
