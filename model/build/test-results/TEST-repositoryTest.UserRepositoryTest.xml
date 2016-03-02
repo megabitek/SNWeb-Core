@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="repositoryTest.UserRepositoryTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-02-24T14:42:19" hostname="EPRUSARW1219" time="122.139">
+  <properties/>
+  <testcase name="testUpdateUser" classname="repositoryTest.UserRepositoryTest" time="0.147"/>
+  <testcase name="testAddUser" classname="repositoryTest.UserRepositoryTest" time="0.112"/>
+  <testcase name="testDeleteUser" classname="repositoryTest.UserRepositoryTest" time="0.009"/>
+  <testcase name="testGetById" classname="repositoryTest.UserRepositoryTest" time="0.002"/>
+  <testcase name="addUserRole" classname="repositoryTest.UserRepositoryTest" time="121.867"/>
+  <system-out><![CDATA[Name: lenaLogin: lenaPassword: 123
+Name: lenaLogin: lenaTestPassword: 123
+Name: lenaLogin: lenaPassword: 123
+Name: lenaLogin: lenaTestPassword: 123
+Name: lenaLogin: lenaPassword: 123
+Name: lenaLogin: lenaPassword: 123
+]]></system-out>
+  <system-err><![CDATA[Feb 24, 2016 5:42:18 PM org.springframework.test.context.TestContextManager retrieveTestExecutionListeners
+INFO: @TestExecutionListeners is not present for class [class repositoryTest.UserRepositoryTest]: using defaults.
+Feb 24, 2016 5:42:18 PM org.springframework.core.SpringProperties <clinit>
+INFO: Found 'spring.properties' file in local classpath
+Feb 24, 2016 5:42:18 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [spring-context.xml]
+Feb 24, 2016 5:42:18 PM org.springframework.context.support.GenericApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.GenericApplicationContext@56f367fa: startup date [Wed Feb 24 17:42:18 MSK 2016]; root of context hierarchy
+Feb 24, 2016 5:42:18 PM org.springframework.beans.factory.config.PropertyPlaceholderConfigurer loadProperties
+INFO: Loading properties file from class path resource [spring.properties]
+Feb 24, 2016 5:42:18 PM com.mchange.v2.log.MLog <clinit>
+INFO: MLog clients using java 1.4+ standard logging.
+Feb 24, 2016 5:42:18 PM com.mchange.v2.c3p0.C3P0Registry banner
+INFO: Initializing c3p0-0.9.0.4 [built 23-January-2006 22:20:29 -0500; debug? true; trace: 10]
+Feb 24, 2016 5:42:18 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+Feb 24, 2016 5:42:18 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.3.6.Final}
+Feb 24, 2016 5:42:18 PM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+Feb 24, 2016 5:42:18 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+Feb 24, 2016 5:42:18 PM org.hibernate.cfg.Configuration configure
+INFO: HHH000044: Configuring from URL: file:/C:/Users/Elena_Kholkina/Documents/NetBeansProjects/New%20Folder/SNetwork/SNetwork/model/build/resources/main/hibernate.cfg.xml
+Feb 24, 2016 5:42:18 PM org.hibernate.cfg.Configuration doConfigure
+INFO: HHH000041: Configured SessionFactory: null
+Feb 24, 2016 5:42:18 PM com.mchange.v2.c3p0.PoolBackedDataSource getPoolManager
+INFO: Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource@68a549a8[ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 68a549a8, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/postgres, loginTimeout -> 0, maxIdleTime -> 0, maxPoolSize -> 100, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, usesTraditionalReflectiveProxies -> false ]
+Feb 24, 2016 5:42:19 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+Feb 24, 2016 5:42:19 PM org.hibernate.engine.jdbc.internal.LobCreatorBuilder useContextualLobCreation
+INFO: HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+Feb 24, 2016 5:42:19 PM org.hibernate.engine.transaction.internal.TransactionFactoryInitiator initiateService
+INFO: HHH000399: Using default transaction strategy (direct JDBC transactions)
+Feb 24, 2016 5:42:19 PM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory <init>
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+Feb 24, 2016 5:42:19 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+Feb 24, 2016 5:42:19 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000102: Fetching database metadata
+Feb 24, 2016 5:42:19 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000396: Updating schema
+Feb 24, 2016 5:42:19 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: public.role
+Feb 24, 2016 5:42:19 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [roleid, title]
+Feb 24, 2016 5:42:19 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: []
+Feb 24, 2016 5:42:19 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [uk_fmnrnqscmgmb1ht3kirjbjwl, role_pkey]
+Feb 24, 2016 5:42:19 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: public.user_role
+Feb 24, 2016 5:42:19 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [roleid, userid]
+Feb 24, 2016 5:42:19 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: [fk_jwv62hhuqojjk7pot7kaex3e1, fk_jpkvqqgndeonhr2alguthv64e]
+Feb 24, 2016 5:42:19 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [user_role_pkey]
+Feb 24, 2016 5:42:19 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: public.users
+Feb 24, 2016 5:42:19 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [password, login, userid, username]
+Feb 24, 2016 5:42:19 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: []
+Feb 24, 2016 5:42:19 PM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [uk_ow0gan20590jrb00upg3va2fn, users_pkey]
+Feb 24, 2016 5:42:19 PM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000232: Schema update complete
+Feb 24, 2016 5:42:19 PM org.springframework.orm.hibernate4.HibernateTransactionManager afterPropertiesSet
+INFO: Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource@68a549a8[ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, description -> null, driverClass -> org.postgresql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 68a549a8, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:postgresql://localhost:5432/postgres, loginTimeout -> 0, maxIdleTime -> 0, maxPoolSize -> 100, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+Feb 24, 2016 5:42:19 PM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (1): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@120c436e]; rollback [true]
+Feb 24, 2016 5:42:19 PM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@6c241230 testClass = UserRepositoryTest, locations = array<String>['classpath:spring-context.xml'], testInstance = repositoryTest.UserRepositoryTest@35dc6e7e, testMethod = testUpdateUser@UserRepositoryTest, testException = [null]]]
+Feb 24, 2016 5:42:19 PM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (2): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@120c436e]; rollback [true]
+Feb 24, 2016 5:42:20 PM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@6c241230 testClass = UserRepositoryTest, locations = array<String>['classpath:spring-context.xml'], testInstance = repositoryTest.UserRepositoryTest@3b6f93d6, testMethod = testAddUser@UserRepositoryTest, testException = [null]]]
+Feb 24, 2016 5:42:20 PM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (3): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@120c436e]; rollback [true]
+Feb 24, 2016 5:42:20 PM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@6c241230 testClass = UserRepositoryTest, locations = array<String>['classpath:spring-context.xml'], testInstance = repositoryTest.UserRepositoryTest@4202a5de, testMethod = testDeleteUser@UserRepositoryTest, testException = [null]]]
+Feb 24, 2016 5:42:20 PM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (4): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@120c436e]; rollback [true]
+Feb 24, 2016 5:42:20 PM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@6c241230 testClass = UserRepositoryTest, locations = array<String>['classpath:spring-context.xml'], testInstance = repositoryTest.UserRepositoryTest@7a0a852a, testMethod = testGetById@UserRepositoryTest, testException = [null]]]
+Feb 24, 2016 5:42:20 PM org.springframework.test.context.transaction.TransactionalTestExecutionListener startNewTransaction
+INFO: Began transaction (5): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@120c436e]; rollback [true]
+Feb 24, 2016 5:44:21 PM org.springframework.test.context.transaction.TransactionalTestExecutionListener endTransaction
+INFO: Rolled back transaction after test execution for test context [[TestContext@6c241230 testClass = UserRepositoryTest, locations = array<String>['classpath:spring-context.xml'], testInstance = repositoryTest.UserRepositoryTest@4d9d0336, testMethod = addUserRole@UserRepositoryTest, testException = [null]]]
+]]></system-err>
+</testsuite>
