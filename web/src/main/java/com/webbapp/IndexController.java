@@ -34,11 +34,9 @@ public class IndexController {
     }
 
     @RequestMapping(value = "/create", method = RequestMethod.POST)
-    public String create(Model model, String signupForm, BindingResult result, RedirectAttributes redirectAttributes) {
+    public String create(Model model,   RedirectAttributes redirectAttributes) {
 
-        if (result.hasErrors()) {
-            return "index";
-        }
+      
 
         return "show";
 
