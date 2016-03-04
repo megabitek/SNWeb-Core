@@ -9,7 +9,7 @@
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
-            <!--classpath resource of spring configs or other required configs go here -->
+       
         </param-value>
     </context-param>
 
@@ -28,7 +28,7 @@
 
     <!-- Default Page Support -->
     <welcome-file-list>
-        <welcome-file>index</welcome-file>
+        <welcome-file>index_1</welcome-file>
     </welcome-file-list>
 
 
