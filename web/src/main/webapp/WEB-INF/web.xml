@@ -28,7 +28,7 @@
 
     <!-- Default Page Support -->
     <welcome-file-list>
-        <welcome-file>index_1</welcome-file>
+        <welcome-file>index</welcome-file>
     </welcome-file-list>
 
 

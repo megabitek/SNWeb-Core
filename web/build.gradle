@@ -9,6 +9,8 @@ repositories {
 
 dependencies {
  //   compile project(":model")
+ compile 'org.thymeleaf:thymeleaf-spring4:2.1.4.RELEASE'
+
   compile 'org.postgresql:postgresql:9.2-1002-jdbc4'
    compile 'org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final'
     compile "javax.servlet:servlet-api:2.5"
