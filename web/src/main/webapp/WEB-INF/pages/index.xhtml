@@ -1,41 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Sample App Sign-up Page</title>
-</head>
-<body>
+    <head>
+        <title>Sample App Sign-up Page</title>
+    </head>
+    <body>
 
-<h1>Sign Up Here!</h1>
+        <h1>Sign Up Here!</h1>
 
-<form method="post" action="create" id="signupForm" cssClass="form-horizontal">
-    <fieldset>
-        <legend>Enter Your Information</legend>
-
-      
-        
-     
-        <div class="control-group"> 
-            <label class="control-label" for="field-firstName">Login</label>
-            <div class="controls">
-                <input id="login" name ="login"/>               
-            </div>
-        </div>
-     
-        <div class="control-group">
-            <label class="control-label" for="field-lastName">Password</label>
-            <div class="controls">
-                <input type="password" id="password"  name ="password"/>
-             
-            </div>
-        </div>   
-        <div class="form-actions">
-            <button type="submit" class="btn btn-primary">Sign up</button>
-            <button type="button" class="btn">Cancel</button>
-        </div>
-    </fieldset>
-</form>
+        <form  id="signupForm" method = "post"  action="enter" cssClass="form-horizontal">
+            <fieldset>
+                <legend>Enter Your Information</legend>
 
 
-</body>
+
+
+                <div class="control-group"> 
+                    <label class="control-label" for="field-firstName">Login</label>
+                    <div class="controls">
+                        <input id="login" name ="login"/>               
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="field-lastName">Password</label>
+                    <div class="controls">
+                        <input type="password" id="password"  name ="password"/>
+
+                    </div>
+                </div>   
+                <div class="form-actions">
+                     <input type ="submit" value ="enter"></input>                        
+                            <a href="/socnet/create/">Add new</a>
+
+                    
+                </div>
+            </fieldset>
+        </form>
+
+
+    </body>
 </html>

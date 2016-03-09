@@ -32,23 +32,23 @@ public class IndexController {
         return new ModelAndView("index", "signupForm", null);
     }
 
-    @RequestMapping(value = "/create", method = RequestMethod.POST)
-    public String create(Model model, RedirectAttributes redirectAttributes, HttpServletRequest request) {
-         System.out.println(userservice);
+    @RequestMapping(value = "/create", method = RequestMethod.GET)
+    public String create( RedirectAttributes redirectAttributes ) {
+       return "newuser";
+
+    }
+
+    @RequestMapping(value = "/enter", method = RequestMethod.POST)
+    public String createget(Model model, HttpServletRequest request) {
+  System.out.println(userservice);
         String login = request.getParameter("login");
         String pass = request.getParameter("password");
            System.out.println(login+ "  "+ pass);
         Users curuser = userservice.findUserByLoginAndPasword(login, pass);
         System.out.println(curuser);
         model.addAttribute("user", curuser.getUsername());
-        return "show";
-
-    }
-
-    @RequestMapping(value = "/create", method = RequestMethod.GET)
-    public String createget() {
-
-        return "show";
+        return "userpage";
+     
 
     }
 
