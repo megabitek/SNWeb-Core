@@ -12,6 +12,9 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-        <div>Adding new user</div>
+        <form action="#" th:action="@{/userpage}" th:object="${newuser}" method="post"> 
+            <input type="text" id="username" name="username" th:value="*{username}" />
+        <div>Adding new user</div>        
+        </form>>
     </body>
 </html>
